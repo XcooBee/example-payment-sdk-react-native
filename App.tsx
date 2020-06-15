@@ -15,7 +15,10 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <Text>Please scan and pay</Text>
+      <Text style={{
+          marginBottom: 20
+        }}>Please scan and pay</Text>
+
       {XcooBeePayQR}
       <Text>powered by XcooBee</Text>
     </View>
