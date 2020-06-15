@@ -2,9 +2,12 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import XcooBeePaySDK from '@xcoobee/react-native-xcoobee-payment-sdk';
 
+
+// TODO: replace with actual values from XcooBee Payment Project
+// Open your payment project in edit mode and review the summary screen
 XcooBeePaySDK.setSystemConfig({
-  campaignId: 'f98.eg6152508',
-  formId: 'v025'
+  campaignId: 'e98.eg6152508',
+  formId: 't025'
 });
 
 export default function App() {
@@ -12,8 +15,9 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <Text>Please pay with XcooBee application.</Text>
+      <Text>Please scan and pay</Text>
       {XcooBeePayQR}
+      <Text>powered by XcooBee</Text>
     </View>
   );
 }
